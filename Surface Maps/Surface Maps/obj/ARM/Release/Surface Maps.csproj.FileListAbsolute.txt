@@ -1,0 +1,68 @@
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\resources.pri
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\AppxManifest.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.build.appxrecipe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\Bing.Maps.winmd
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Release\Bing.Maps.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\App.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\App.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Common\StandardStyles.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Common\StandardStyles.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\MainPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\MainPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\MapView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\MapView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\FeedbackSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\FeedbackSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\HelpSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\HelpSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\LanguagesSettingFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\LanguagesSettingFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\XamlTypeInfo.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\App.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Common\StandardStyles.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\MainPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\FeedbackSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\HelpSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\SettingCommands\LanguagesSettingFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\MapView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.csproj.GenerateResource.Cache
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\priconfig.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\layout.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\resources.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\pri.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\LanguageQualifiers.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\ProjectArchitectures.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\DiyPushpin.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\DiyPushpin.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\DiyPushpin.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumCollectionView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumCollectionView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumCollectionView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\ChangeCollectionNameFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\ChangeCollectionNameFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumModifyView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumModifyView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumMediasCommentModifyFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumMediasCommentModifyFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumNameDateModifyFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumNameDateModifyFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumMediasCommentModifyFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumModifyView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\AlbumNameDateModifyFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\ChangeCollectionNameFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoAlbumModifyView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoAlbumModifyView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoAlbumModifyView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoExposition.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoExposition.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoExposition.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoExposition.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoExposition.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\VideoExposition.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoPlayPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoPlayPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoPlayPage.xaml

@@ -1,0 +1,42 @@
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\resources.pri
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\AppxManifest.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\Surface Maps.build.appxrecipe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\App.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\App.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Common\StandardStyles.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Common\StandardStyles.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\XamlTypeInfo.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\App.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Common\StandardStyles.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\priconfig.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\layout.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\resources.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\pri.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\LanguageQualifiers.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\ProjectArchitectures.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\MainPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\MainPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\MainPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\FeedbackSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\FeedbackSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\FeedbackSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\HelpSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\HelpSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\LanguagesSettingFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\LanguagesSettingFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\HelpSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\SettingCommands\LanguagesSettingFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\priconfig.xml.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\layout.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\resources.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\pri.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\Bing.Maps.winmd
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\ARM\Debug\Bing.Maps.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Surface Maps.csproj.GenerateResource.Cache
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Pages\MapView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Pages\MapView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Debug\Pages\MapView.xaml

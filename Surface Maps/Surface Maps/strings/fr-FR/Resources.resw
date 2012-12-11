@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsAndFeedbak" xml:space="preserve">
+    <value>A propos de nous</value>
+  </data>
+  <data name="AddedLiftMap" xml:space="preserve">
+    <value>La carte a été ajoutée avec succès.</value>
+  </data>
+  <data name="AddFileHandIndicateText" xml:space="preserve">
+    <value>Choisir un lieu sur la carte, puis sélectionner un fichier à insérer</value>
+  </data>
+  <data name="AddPushpinHandIndicateText" xml:space="preserve">
+    <value>Choisir un lieu sur la carte pour insérer un fichier (ou un dossier)</value>
+  </data>
+  <data name="AddRemoveHandIndicateText" xml:space="preserve">
+    <value>Choisir un lieu sur la carte pour déplacer un fichier (ou un dossier) sélectionné</value>
+  </data>
+  <data name="AlbumHasBeenRemoved" xml:space="preserve">
+    <value>L'album a été supprimé avec succès.</value>
+  </data>
+  <data name="ANewPushpinHasBeenAdded" xml:space="preserve">
+    <value>Le fichier (ou le dossier) a été ajouté avec succès.</value>
+  </data>
+  <data name="ASelectedPushpinHasBeenUpdated" xml:space="preserve">
+    <value>La position du fichier ou du dossier sur la carte a été changé</value>
+  </data>
+  <data name="childItemCount" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="ConfirmationForAgreeSurvey" xml:space="preserve">
+    <value>Oui, j'espère</value>
+  </data>
+  <data name="ConfirmationForDeleteAlbum" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer l'album sélectionné ? Cela effacera ses informations de manière définitive.</value>
+  </data>
+  <data name="ConfirmationForDeleteLifeMap" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer la carte sélectionnée ? Cela effacera ses informations de manière définitive.</value>
+  </data>
+  <data name="ConfirmationForDeletePushpin" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer le fichier (ou le dossier) sélectionné ? Cela effacera ses informations de manière définitive.</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinNo" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinNotification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinYes" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="ConnectSkyDriveFirst" xml:space="preserve">
+    <value>Not connected. Please click the left button to connect</value>
+  </data>
+  <data name="documentlibararycannotaccess" xml:space="preserve">
+    <value>A cause de la limite d'autorité de développeur individuel et le système de Surface, on ne peut pas accéder certains fichiers qui sont situé sur dossier documentation et les autres dossiers particuliers (En général, seulement les fichers dans les dossiers Video, Photo et Musique peuvent être utilisés)</value>
+  </data>
+  <data name="donnotsuportvideosynchronization" xml:space="preserve">
+    <value>This version does not support video upload skydrive synchronization</value>
+  </data>
+  <data name="FileSynchronized" xml:space="preserve">
+    <value>File synchronization</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Démonstration</value>
+  </data>
+  <data name="HelpLifeMapName" xml:space="preserve">
+    <value>Frapper à différents endroits pour créer vos cartes</value>
+  </data>
+  <data name="HomeRegion" xml:space="preserve">
+    <value>fr-FR</value>
+  </data>
+  <data name="ifwantfeedback" xml:space="preserve">
+    <value>Il y a une erreur pendant votre utilisation, veuillez vous informer à nous par mail pour améliorer cet application?</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Langues</value>
+  </data>
+  <data name="MapCulture" xml:space="preserve">
+    <value>fr-FR</value>
+  </data>
+  <data name="NewPhotosHaveBeenAdded" xml:space="preserve">
+    <value>Les photos ont été ajouté, et l'album</value>
+  </data>
+  <data name="NewPhotosHaveBeenAdded2" xml:space="preserve">
+    <value>a aussi été sauvegardées avec succès.</value>
+  </data>
+  <data name="NewVidoesHaveBeenAdded" xml:space="preserve">
+    <value>L'album a été ajouté avec succès.</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="PhotosSynchronized" xml:space="preserve">
+    <value>Photo synchronization </value>
+  </data>
+  <data name="PushpinCollectionIsSaved" xml:space="preserve">
+    <value>Les modifications du fichier a été sauvegardées avec succès.</value>
+  </data>
+  <data name="PushpinHasBeenRemoved" xml:space="preserve">
+    <value>Le fichier et le dossier et son contenu ont été supprimés avec succès.</value>
+  </data>
+  <data name="ReadyToUpload" xml:space="preserve">
+    <value>is ready to be uploaded to skydrive</value>
+  </data>
+  <data name="RemovedLiftMap" xml:space="preserve">
+    <value>La carte a été supprimée avec succès</value>
+  </data>
+  <data name="SkyDriveSyncroTitle" xml:space="preserve">
+    <value>Synchronization</value>
+  </data>
+  <data name="skydriveuploadfailed" xml:space="preserve">
+    <value>SkyDrive synchronization failed because the Internet connection was lost. If your Internet connection is functioning correctly, please contact us by email. Thank you.</value>
+  </data>
+  <data name="sorrynotification" xml:space="preserve">
+    <value>Exceuse nous</value>
+  </data>
+  <data name="StartSynchronized" xml:space="preserve">
+    <value>Synchronization is starting...</value>
+  </data>
+  <data name="stopsynchronisation" xml:space="preserve">
+    <value>Synchronization in progress. Navigating away from this page will cancel your synchronization</value>
+  </data>
+  <data name="survey" xml:space="preserve">
+    <value>Sondage pour une nouvelle fonctionnalité : Offrir cadeau</value>
+  </data>
+  <data name="surveyfornewfunction" xml:space="preserve">
+    <value>Souhaiteriez-vous pouvoir créer des cadeaux à partir de vos albums ? Exemples : album photo papier entièrement personnalisé, tablette numérique décorée et personnalisée avec vos photos et vos vidéos, mini-arbre de noël décoré avec vos albums, etc. Toute suggestion est bienvenue !</value>
+  </data>
+  <data name="SynchronizedCancled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="SynchronizedFinished" xml:space="preserve">
+    <value> Synchronization completed</value>
+  </data>
+  <data name="TellToFriends" xml:space="preserve">
+    <value>Proposer cette application à vos amis</value>
+  </data>
+  <data name="TextBlock_HelpPageTitle.Text" xml:space="preserve">
+    <value>Démonstration</value>
+  </data>
+  <data name="TextBlock_MainPageTitle.Text" xml:space="preserve">
+    <value>Put 'em on maps</value>
+  </data>
+  <data name="Uid_Button_AddAFile.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter un fichier</value>
+  </data>
+  <data name="Uid_Button_AddAPushPin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter un ficher/dossier</value>
+  </data>
+  <data name="Uid_Button_AddNewAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter un album</value>
+  </data>
+  <data name="Uid_Button_AddNewLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter une carte</value>
+  </data>
+  <data name="Uid_Button_AddNewPhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter des photos</value>
+  </data>
+  <data name="Uid_Button_AddNewVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter des vidéos</value>
+  </data>
+  <data name="Uid_Button_AddVideoAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter un album vidéo</value>
+  </data>
+  <data name="Uid_Button_AutoPlay.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Diffusion automatique</value>
+  </data>
+  <data name="Uid_Button_ChangeAlbumName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Modifier le nom d'album et la date correspondante</value>
+  </data>
+  <data name="Uid_Button_ChangeCollectionBackground.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Changer fond d'écran</value>
+  </data>
+  <data name="Uid_Button_ChangeCollectionName.Content" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="Uid_Button_ChangeLifeMapBackground.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Changer fond d'écran de la carte</value>
+  </data>
+  <data name="Uid_Button_ChangeLifeMapName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Nommer Carte</value>
+  </data>
+  <data name="Uid_Button_ChangeSelectedPhotosComment.Content" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="Uid_Button_DisplayHidePushpin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Masquer/Afficher les fichiers(dossiers)</value>
+  </data>
+  <data name="Uid_Button_EnterSelectedLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="Uid_Button_Localize.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ma région</value>
+  </data>
+  <data name="Uid_Button_MakeAGift.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Offrir album</value>
+  </data>
+  <data name="Uid_Button_ModifyAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Modifier Album</value>
+  </data>
+  <data name="Uid_Button_ModifyCollectionName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="Uid_Button_MoveSelectedPushPin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Déplacer un fichier/dossier</value>
+  </data>
+  <data name="Uid_Button_PlayAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Lancer un diaporama</value>
+  </data>
+  <data name="Uid_Button_PlayPhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>En mode diaporama</value>
+  </data>
+  <data name="Uid_Button_PlaySelectedVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Jouer</value>
+  </data>
+  <data name="Uid_Button_RemoveAAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Supprimer album</value>
+  </data>
+  <data name="Uid_Button_RemoveAPushPin.Content" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Uid_Button_RemoveLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Uid_Button_RemovePhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Supprimer des photos</value>
+  </data>
+  <data name="Uid_Button_RemoveVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Supprimer des videos</value>
+  </data>
+  <data name="Uid_Button_SaveAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="Uid_Button_SaveCollection.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="Uid_Button_ShowPhotoByAlbum.Content" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="Uid_Button_StopAutoPlay.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Arrêter la diffusion automatique</value>
+  </data>
+  <data name="Uid_Button_StopkyDrive.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Uid_Button_Synchronisation.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>SkyDrive synchronization</value>
+  </data>
+  <data name="Uid_Button_UpdateLiftMapName.Content" xml:space="preserve">
+    <value>Sauvegarder nom de la carte</value>
+  </data>
+  <data name="Uid_Button_UploadSkyDrive.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Upload synchronization</value>
+  </data>
+  <data name="Uid_Button_ValideAlbumName.Content" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="Uid_Button_ValidPhotoComment.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Ajouter des commentaires</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCollectionName.Text" xml:space="preserve">
+    <value>Nom du dossier :</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCollectionNameTitle.Text" xml:space="preserve">
+    <value>Renommer</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeComment.Text" xml:space="preserve">
+    <value>Nouveau commentaire:</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCommentTitle.Text" xml:space="preserve">
+    <value>Modification de commentaire</value>
+  </data>
+  <data name="Uid_TextBlock_ContactUs.Text" xml:space="preserve">
+    <value>A propose de nous</value>
+  </data>
+  <data name="Uid_TextBlock_Day.Text" xml:space="preserve">
+    <value>Jour</value>
+  </data>
+  <data name="Uid_TextBlock_ModifyAlbumName.Text" xml:space="preserve">
+    <value>Nom d'album:</value>
+  </data>
+  <data name="Uid_TextBlock_ModifyAlbumNameTitle.Text" xml:space="preserve">
+    <value>Modifier le nom d'album et la date correspondante</value>
+  </data>
+  <data name="Uid_TextBlock_Month.Text" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="Uid_TextBlock_Year.Text" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="UpdatedLiftMapBackground" xml:space="preserve">
+    <value>Le fond d'écan a été mis à jour avec succès.</value>
+  </data>
+  <data name="UpdatedLiftMapName" xml:space="preserve">
+    <value>Le nom de la carte a été mis à jour avec succès</value>
+  </data>
+  <data name="video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="wehaveaproblem" xml:space="preserve">
+    <value>Erreurs</value>
+  </data>
+  <data name="yesfeedback" xml:space="preserve">
+    <value>Oui, je voudrais feed-back</value>
+  </data>
+  <data name="yesstopsynchronisation" xml:space="preserve">
+    <value>Stop synchronization and navigate to another page. </value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="cannotreadfilepossiblereason" xml:space="preserve">
+    <value>Refuser de lire le fichier</value>
+  </data>
+  <data name="cannotreadallphotos" xml:space="preserve">
+    <value>Refuser de lire certains photos</value>
+  </data>
+  <data name="cannotreadallvideos" xml:space="preserve">
+    <value>Refuser de lire certains videos</value>
+  </data>
+  <data name="pathfilechanged" xml:space="preserve">
+    <value>L'application n'arrive pas trouvé le fichier à cause peut-être du changement d'adresse ou de nom de fichier, la suppression du fichier etc.</value>
+  </data>
+  <data name="Uid_Button_AddPhotoAlbum.Content" xml:space="preserve">
+    <value>Album photo</value>
+  </data>
+  <data name="Uid_Button_AddVideoAlbum.Content" xml:space="preserve">
+    <value>Album vidéo</value>
+  </data>
+  <data name="leavewithoutsave" xml:space="preserve">
+    <value>Vous venez de modifier quelque chose de cet album, etes-vous sûr de quitter sans sauvegarder?</value>
+  </data>
+  <data name="noleaveforsave" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="yesleavewithoutsave" xml:space="preserve">
+    <value>Oui, quitte sans sauvegarder</value>
+  </data>
+  <data name="dontsupportnonlocalfile" xml:space="preserve">
+    <value>Refuser de lire le fichier. Pour le moment, l'accès au fichier non-local n'est pas  supporté.</value>
+  </data>
+  <data name="Uid_Button_AddPhotoVideoAlbum.Content" xml:space="preserve">
+    <value>Ajouter un dossier</value>
+  </data>
+  <data name="Uid_Button_AddSingleFile.Content" xml:space="preserve">
+    <value>Ajouter un fichier</value>
+  </data>
+</root>

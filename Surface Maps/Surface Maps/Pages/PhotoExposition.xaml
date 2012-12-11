@@ -1,0 +1,163 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="Surface_Maps.Pages.PhotoExposition"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Surface_Maps.Pages"
+    xmlns:common="using:Surface_Maps.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <common:LayoutAwarePage.BottomAppBar>
+        <AppBar x:Name="AppBar_BottomAppBar" Background="#99000000" BorderBrush="#99000000">
+            <StackPanel Height="100" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="Button_PlayPhoto" 
+                            x:Uid="Uid_Button_PlayPhoto"
+                            Margin="10,0" FontSize="18" FontWeight="Light"
+                            HorizontalAlignment="Right" VerticalAlignment="Top"
+                            Click="Button_PlayPhoto_Click_1">
+                    <Button.Style>
+                        <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+                            <Setter Property="AutomationProperties.Name" Value=""/>
+                            <Setter Property="Content" Value="&#xE102;"/>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+
+        </AppBar>
+    </common:LayoutAwarePage.BottomAppBar>
+    
+    <Page.Resources>
+
+        <!-- Collection of items displayed by this page -->
+        <CollectionViewSource
+            x:Name="itemsViewSource"
+            Source="{Binding ListPhoto}"/>
+
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">My Application</x:String>
+
+        <!-- Grid-appropriate 250 pixel square item template as seen in the GroupedItemsPage and ItemsPage -->
+        <DataTemplate x:Key="Standard80ItemTemplateForThisPage">
+            <Grid HorizontalAlignment="Left" Height="{Binding RelativeSource={RelativeSource Self}, Path=Width}" Margin="5">
+                <Image Source="{Binding Image}" Stretch="UniformToFill"/>
+                <Grid VerticalAlignment="Bottom"  Height="30" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                    <TextBlock Text="{Binding Comment}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" 
+							   Margin="0" FontWeight="SemiLight" FontSize="15"
+							   TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="Black" x:Name="MainGrid">
+        <Image x:Name="Image_Background" HorizontalAlignment="Stretch" Stretch="UniformToFill"
+               VerticalAlignment="Stretch" Opacity="0.5" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Back button and page title -->
+            <Grid x:Name="Grid_Title">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="backButton" Click="GoBackToAlbumCollection" Style="{StaticResource BackButtonStyle}"/>
+                    <TextBlock x:Name="pageTitle" Margin="100,0,30,40" Style="{StaticResource PageHeaderTextStyle}" FontWeight="Light" />
+                </Grid>
+            </Grid>
+
+            <!-- Horizontal scrolling grid used in most view states -->
+            <local:VariableGridView Grid.Row="1"
+                                x:Name="VariableGridView"
+                                Padding="116,0,116,46"
+                                ItemsSource="{Binding ListPhoto}">
+                <local:VariableGridView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="2" VariableSizedWrapGrid.ColumnSpan="{Binding Width}">
+                            <Image Source="{Binding Image}"
+                               Stretch="UniformToFill"
+                               VerticalAlignment="Stretch"
+                               HorizontalAlignment="Stretch" />
+                            <StackPanel Margin="4" Background="#AA000000"
+                                    VerticalAlignment="Bottom"
+                                    HorizontalAlignment="Stretch">
+                                <TextBlock Text="{Binding Comment}"
+                                       HorizontalAlignment="Center"
+                                       Foreground="White"
+                                       FontSize="16"
+                                       Margin="6" />
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </local:VariableGridView.ItemTemplate>
+                <local:VariableGridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VariableSizedWrapGrid VerticalAlignment="Center"
+                                           ItemHeight="100"
+                                           ItemWidth="100"
+                                           MaximumRowsOrColumns="20" />
+                    </ItemsPanelTemplate>
+                </local:VariableGridView.ItemsPanel>
+            </local:VariableGridView>
+
+            <!-- Vertical scrolling list only used when snapped -->
+            <ListView
+            x:Name="itemListView"
+            AutomationProperties.AutomationId="ItemsListView"
+            AutomationProperties.Name="Items"
+            TabIndex="1"
+            Grid.Row="1"
+            Visibility="Collapsed"
+            Margin="0,-100,0,60"
+            Padding="10,0,0,60"
+            ItemsSource="{Binding ListPhoto}"
+            ItemTemplate="{StaticResource Standard80ItemTemplateForThisPage}"/>
+
+        </Grid>
+
+        <VisualStateManager.VisualStateGroups>
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                </VisualState>
+
+                <!--
+                    The back button and title have different styles when snapped, and the list representation is substituted
+                    for the grid displayed in all other view states
+					-->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Grid_Title" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemListView" Storyboard.TargetProperty="Margin">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0,-100,0,50"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AppBar_BottomAppBar" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemListView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="VariableGridView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>

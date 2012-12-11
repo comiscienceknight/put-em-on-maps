@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsAndFeedbak" xml:space="preserve">
+    <value>关于我们和反馈</value>
+  </data>
+  <data name="AddedLiftMap" xml:space="preserve">
+    <value>添加地图图成功</value>
+  </data>
+  <data name="AddFileHandIndicateText" xml:space="preserve">
+    <value>手指点击地图中你想插入的位置后，在文件浏览界面选择需要的文件插入</value>
+  </data>
+  <data name="AddPushpinHandIndicateText" xml:space="preserve">
+    <value>手指点击地图中你想插入的位置即可建立新的文件夹</value>
+  </data>
+  <data name="AddRemoveHandIndicateText" xml:space="preserve">
+    <value>手指点击地图中位置，之前所选文件（夹）就会移动到此位置</value>
+  </data>
+  <data name="AlbumHasBeenRemoved" xml:space="preserve">
+    <value>所选专辑被成功删除</value>
+  </data>
+  <data name="ANewPushpinHasBeenAdded" xml:space="preserve">
+    <value>添加新文件（夹）成功！</value>
+  </data>
+  <data name="ASelectedPushpinHasBeenUpdated" xml:space="preserve">
+    <value>所选文件（夹）移动成功</value>
+  </data>
+  <data name="childItemCount" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="ConfirmationForAgreeSurvey" xml:space="preserve">
+    <value>是的, 我同意</value>
+  </data>
+  <data name="ConfirmationForDeleteAlbum" xml:space="preserve">
+    <value>该操作会永久性删除您所选的专辑及其相关的所有信息，您是否确定删除？</value>
+  </data>
+  <data name="ConfirmationForDeleteLifeMap" xml:space="preserve">
+    <value>是否删除地图及其对应的所有信息？</value>
+  </data>
+  <data name="ConfirmationForDeletePushpin" xml:space="preserve">
+    <value>该操作会永久性删除您所选的文件（夹）及其相关的所有信息，您是否确定删除？</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinNo" xml:space="preserve">
+    <value>取消操作</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinNotification" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="ConfirmationForDeletePushpinYes" xml:space="preserve">
+    <value>是的, 请删除.</value>
+  </data>
+  <data name="documentlibararycannotaccess" xml:space="preserve">
+    <value>由于微软限制个人开发账户访问“文档”文件夹中的文件，并且由于微软不支持RT系统下访问非RT文件夹的文件，导致程序无法访问一部分文件 （正常来讲，只有图片，音乐以及视频文件夹下的文件可以被正常使用）。请您继续支持本软件，以便可以通过公司形式发布 ：）</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>演示</value>
+  </data>
+  <data name="HelpLifeMapName" xml:space="preserve">
+    <value>尝试点击所有地方以便更好地使用"我"</value>
+  </data>
+  <data name="HomeRegion" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="ifwantfeedback" xml:space="preserve">
+    <value>您是否想将出现的一场错误通过邮件反馈给开发者，进行反馈以便帮助程序员更好的修正您的软件？</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="MapCulture" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="NewPhotosHaveBeenAdded" xml:space="preserve">
+    <value>新的照片添加成功，并且专辑</value>
+  </data>
+  <data name="NewPhotosHaveBeenAdded2" xml:space="preserve">
+    <value>也被成功更新.</value>
+  </data>
+  <data name="NewVidoesHaveBeenAdded" xml:space="preserve">
+    <value>新的视频添加成功</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>照片</value>
+  </data>
+  <data name="PushpinCollectionIsSaved" xml:space="preserve">
+    <value>照片集更新及保存成功.</value>
+  </data>
+  <data name="PushpinHasBeenRemoved" xml:space="preserve">
+    <value>之前所选的的文件（夹）及其包含的信息已经被删除.</value>
+  </data>
+  <data name="RemovedLiftMap" xml:space="preserve">
+    <value>删除地图成功</value>
+  </data>
+  <data name="sorrynotification" xml:space="preserve">
+    <value>很抱歉</value>
+  </data>
+  <data name="survey" xml:space="preserve">
+    <value>礼物调查 :-)</value>
+  </data>
+  <data name="surveyfornewfunction" xml:space="preserve">
+    <value>您是否希望将这个专辑的内容，以精美礼品的形式寄回到您家？ 您是否希望软件中提供给您模版，让您选择？还是您更愿意与专业人员交流，一起设计您的实体照片、视频集？ 如果您有这方面的想法，和请求，请您给我们发邮件，告诉我们您的想法。 如果您愿意给我们反馈意见，请点击按钮 “是” ，将会链接到您的邮件系统</value>
+  </data>
+  <data name="TellToFriends" xml:space="preserve">
+    <value>推荐给好友</value>
+  </data>
+  <data name="TextBlock_HelpPageTitle.Text" xml:space="preserve">
+    <value>演示</value>
+  </data>
+  <data name="TextBlock_MainPageTitle.Text" xml:space="preserve">
+    <value>Put 'em on maps</value>
+  </data>
+  <data name="Uid_Button_AddAFile.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加独立文件</value>
+  </data>
+  <data name="Uid_Button_AddAPushPin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加文件（夹）</value>
+  </data>
+  <data name="Uid_Button_AddNewAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加专辑</value>
+  </data>
+  <data name="Uid_Button_AddNewLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加新地图</value>
+  </data>
+  <data name="Uid_Button_AddNewPhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加照片</value>
+  </data>
+  <data name="Uid_Button_AddNewVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加视频</value>
+  </data>
+  <data name="Uid_Button_AddVideoAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加视频专辑</value>
+  </data>
+  <data name="Uid_Button_AutoPlay.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>自动播放</value>
+  </data>
+  <data name="Uid_Button_ChangeAlbumName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>给专辑命名</value>
+  </data>
+  <data name="Uid_Button_ChangeCollectionBackground.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>设置背景</value>
+  </data>
+  <data name="Uid_Button_ChangeCollectionName.Content" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Uid_Button_ChangeLifeMapBackground.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>设置地图背景</value>
+  </data>
+  <data name="Uid_Button_ChangeLifeMapName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>编辑地图名称</value>
+  </data>
+  <data name="Uid_Button_ChangeSelectedPhotosComment.Content" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Uid_Button_DisplayHidePushpin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>隐藏/显示地图上的文件（夹）</value>
+  </data>
+  <data name="Uid_Button_EnterSelectedLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="Uid_Button_Localize.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>定位我的区域</value>
+  </data>
+  <data name="Uid_Button_MakeAGift.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>礼物</value>
+  </data>
+  <data name="Uid_Button_ModifyAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>编辑专辑</value>
+  </data>
+  <data name="Uid_Button_ModifyCollectionName.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>设置题目</value>
+  </data>
+  <data name="Uid_Button_MoveSelectedPushPin.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>移动所选文件（夹）</value>
+  </data>
+  <data name="Uid_Button_PlayAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="Uid_Button_PlayPhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="Uid_Button_PlaySelectedVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="Uid_Button_RemoveAAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>删除专辑</value>
+  </data>
+  <data name="Uid_Button_RemoveAPushPin.Content" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Uid_Button_RemoveLifeMap.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>删除地图</value>
+  </data>
+  <data name="Uid_Button_RemovePhoto.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>删除照片</value>
+  </data>
+  <data name="Uid_Button_RemoveVideo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>删除视频</value>
+  </data>
+  <data name="Uid_Button_SaveAlbum.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Uid_Button_SaveCollection.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Uid_Button_ShowPhotoByAlbum.Content" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="Uid_Button_StopAutoPlay.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>停止自动播放</value>
+  </data>
+  <data name="Uid_Button_StopkyDrive.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Uid_Button_UpdateLiftMapName.Content" xml:space="preserve">
+    <value>保存地图名称</value>
+  </data>
+  <data name="Uid_Button_ValideAlbumName.Content" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Uid_Button_ValidPhotoComment.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>添加注释</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCollectionName.Text" xml:space="preserve">
+    <value>文件夹名称:</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCollectionNameTitle.Text" xml:space="preserve">
+    <value>设置文件夹名称</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeComment.Text" xml:space="preserve">
+    <value>注释:</value>
+  </data>
+  <data name="Uid_TextBlock_ChangeCommentTitle.Text" xml:space="preserve">
+    <value>编辑注释</value>
+  </data>
+  <data name="Uid_TextBlock_ContactUs.Text" xml:space="preserve">
+    <value>关于我们</value>
+  </data>
+  <data name="Uid_TextBlock_Day.Text" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="Uid_TextBlock_ModifyAlbumName.Text" xml:space="preserve">
+    <value>专辑名称:</value>
+  </data>
+  <data name="Uid_TextBlock_ModifyAlbumNameTitle.Text" xml:space="preserve">
+    <value>编辑专辑名称和日期</value>
+  </data>
+  <data name="Uid_TextBlock_Month.Text" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Uid_TextBlock_Year.Text" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="UpdatedLiftMapBackground" xml:space="preserve">
+    <value>背景已经被更新</value>
+  </data>
+  <data name="UpdatedLiftMapName" xml:space="preserve">
+    <value>更新完成</value>
+  </data>
+  <data name="video" xml:space="preserve">
+    <value>视频</value>
+  </data>
+  <data name="wehaveaproblem" xml:space="preserve">
+    <value>发现错误</value>
+  </data>
+  <data name="yesfeedback" xml:space="preserve">
+    <value>是的，我愿意提交反馈</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="cannotreadallphotos" xml:space="preserve">
+    <value>拒绝访问部分图片</value>
+  </data>
+  <data name="cannotreadfilepossiblereason" xml:space="preserve">
+    <value>拒绝读取文件</value>
+  </data>
+  <data name="cannotreadallvideos" xml:space="preserve">
+    <value>拒绝访问部分视频</value>
+  </data>
+  <data name="pathfilechanged" xml:space="preserve">
+    <value>您对文件名字、位置的修改，或者删除文件，都将使程序无法之前的路径找到文件</value>
+  </data>
+  <data name="Uid_Button_AddPhotoAlbum.Content" xml:space="preserve">
+    <value>照片专辑</value>
+  </data>
+  <data name="Uid_Button_AddVideoAlbum.Content" xml:space="preserve">
+    <value>视频专辑</value>
+  </data>
+  <data name="leavewithoutsave" xml:space="preserve">
+    <value>您刚刚进行了一次为保存的操作，您确定离开此页并不保存？</value>
+  </data>
+  <data name="noleaveforsave" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="notification" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="yesleavewithoutsave" xml:space="preserve">
+    <value>是的，退出不保存</value>
+  </data>
+  <data name="Uid_Button_AddPhotoVideoAlbum.Content" xml:space="preserve">
+    <value>添加文件夹</value>
+  </data>
+  <data name="Uid_Button_AddSingleFile.Content" xml:space="preserve">
+    <value>添加一个文件</value>
+  </data>
+</root>
