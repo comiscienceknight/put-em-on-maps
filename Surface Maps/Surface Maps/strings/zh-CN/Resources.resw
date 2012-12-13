@@ -447,4 +447,17 @@
   <data name="2severalvideoscannotread" xml:space="preserve">
     <value>无法读取其中的一部分视频</value>
   </data>
+
+  <data name="2howtousemainpage" xml:space="preserve">
+    <value>首页：添加、删除地图；给每个地图加入主题（命名），修改地图的封面图片；
+             打开地图至“地图页面（图片2）”</value>
+  </data>
+  <data name="2howtousemapview" xml:space="preserve">
+    <value>地图页面：在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹；
+             打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
+  </data>
+  <data name="2howtousefolderpage" xml:space="preserve">
+    <value>文件夹页面：在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹；
+             打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
+  </data>
 </root>
