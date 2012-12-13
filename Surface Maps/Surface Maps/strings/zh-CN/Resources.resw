@@ -450,14 +450,30 @@
 
   <data name="2howtousemainpage" xml:space="preserve">
     <value>首页：添加、删除地图；给每个地图加入主题（命名），修改地图的封面图片；
-             打开地图至“地图页面（图片2）”</value>
+    打开地图至“地图页面（图片2）”</value>
   </data>
   <data name="2howtousemapview" xml:space="preserve">
     <value>地图页面：在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹；
-             打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
+    打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
   </data>
   <data name="2howtousefolderpage" xml:space="preserve">
-    <value>文件夹页面：在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹；
-             打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
+    <value>文件夹页面：命名文件夹，设定日期；设置文件夹内背景图片；添加照片或视频专辑
+    删除专辑；编辑专辑（至“编辑照片专辑页面（图片4）”）；打开播放专辑（至“照片专辑展示页面（图片5）”）</value>
+  </data>
+  <data name="2howtouseeditalbumpage" xml:space="preserve">
+    <value>编辑照片专辑页面：命名专辑；添加、删除照片；给照片注释
+    编辑视频专辑页面与页基本相同</value>
+  </data>
+  <data name="2howtouseshowalbumpage" xml:space="preserve">
+    <value>照片专辑展示页面：列表展示；选择播放（至“播放照片页面（图片6）”）</value>
+  </data>
+  <data name="2howtouseshowpicspage" xml:space="preserve">
+    <value>播放照片页面：幻灯片自动播放；手动播放</value>
+  </data>
+  <data name="2howtouseshowvideoalbumpage" xml:space="preserve">
+    <value>视频展示页面：左为视频列表，右为win8默认播放器</value>
+  </data>
+  <data name="2howtouseshowvideoalbumpage" xml:space="preserve">
+    <value>文件选择器：除了本地文件夹（音乐，照片，视频）之外，还可以访问可触及到的网络中的数据</value>
   </data>
 </root>
