@@ -94,7 +94,7 @@ namespace Surface_Maps.Pages
         {
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += dispatcherTimer_Tick;
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 3);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 2);
             dispatcherTimer.Start();
         }
 
@@ -256,20 +256,24 @@ namespace Surface_Maps.Pages
 
         public async Task LoadData()
         {
-            Data.LifeMapMgr.ListOfAllAlbums = await Helper.GetContent<ObservableCollection<DataModel.AlbumDataStructure>>(Data.LifeMapMgr.SelectedLifeMap.Id + Constants.NamingListAlbums);
+			try
+			{
+				Data.LifeMapMgr.ListOfAllAlbums = await Helper.GetContent<ObservableCollection<DataModel.AlbumDataStructure>>(Data.LifeMapMgr.SelectedLifeMap.Id + Constants.NamingListAlbums);
 
-            if (Utils.LifeMapManager.GetInstance().ListOfAllAlbums != null)
-            {
-                AllCollectionByDateGroups = new ObservableCollection<GroupInfoList<DataModel.AlbumDataStructure>>();
-                var result = Utils.LifeMapManager.GetInstance().ListOfAllAlbums.Where(p => p.Latitude == pushpinData.Latitude && p.Longitude == pushpinData.Longitude);
-				// 然后根据日期排序
-                foreach (var row in result)
-                {
-                    if (row.AlbumType == "Photo") await loadOnePhotoAlbum(row);
-                    else if (row.AlbumType == "Video") await loadOneVideoAlbum(row);
-                    AddAlbumToDataSourceCollection(row);
-                }
-            }
+				if (Utils.LifeMapManager.GetInstance().ListOfAllAlbums != null)
+				{
+					AllCollectionByDateGroups = new ObservableCollection<GroupInfoList<DataModel.AlbumDataStructure>>();
+					var result = Utils.LifeMapManager.GetInstance().ListOfAllAlbums.Where(p => p.Latitude == pushpinData.Latitude && p.Longitude == pushpinData.Longitude);
+					// 然后根据日期排序
+					foreach (var row in result)
+					{
+						if (row.AlbumType == "Photo") await loadOnePhotoAlbum(row);
+						else if (row.AlbumType == "Video") await loadOneVideoAlbum(row);
+						AddAlbumToDataSourceCollection(row);
+					}
+				}
+			}
+			catch{}
         }
 
         private static async Task loadOneVideoAlbum(DataModel.AlbumDataStructure row)
@@ -522,17 +526,34 @@ namespace Surface_Maps.Pages
         {
             try
             {
+				Utils.Constants.StartLoadingAnimation(MainGrid);
                 StorageFile fileFromPicker = await selectPhotosFromFilePicker();
                 if (fileFromPicker != null && fileFromPicker.Path != "")
-                {
                     this.pushpinData.BackgroundPhotoPath = fileFromPicker.Path;
-                    fillBackgroundImage(this.pushpinData.BackgroundPhotoPath);
-                }
+				else if (fileFromPicker != null && fileFromPicker.Path == "")
+					this.pushpinData.BackgroundPhotoPath = await fillBackgroundImageFromNonLocal(fileFromPicker);
+				fillBackgroundImage(this.pushpinData.BackgroundPhotoPath);
                 justSaved = false;
             }
             catch (Exception excep) { Utils.Constants.ShowErrorDialog(excep, "AlbumCollectionView - Button_ChangeCollectionBackground_Click"); }
+			Utils.Constants.StopLoadingAnimation(MainGrid);
         }
 
+		private static async Task<string> fillBackgroundImageFromNonLocal(StorageFile storageFile)
+        {
+            try
+            {
+                IRandomAccessStream iras = await storageFile.OpenReadAsync();
+                Windows.Storage.Streams.Buffer MyBuffer = new Windows.Storage.Streams.Buffer(Convert.ToUInt32(iras.Size));
+                IBuffer iBuf = await iras.ReadAsync(MyBuffer, MyBuffer.Capacity, InputStreamOptions.None);
+                string filename = DateTime.Now.ToString().Replace(":", "").Replace("/", "_").Replace("\\", "_").Replace(".", "").Replace("\"", "") + "lifemapcover" + storageFile.Name;
+				return await Helper.SaveImages(iBuf, filename);
+            }
+            catch{
+				return "";
+			}
+        }
+		
         private async void fillBackgroundImage(string path)
         {
             if (path != null && path != "")
@@ -547,9 +568,10 @@ namespace Surface_Maps.Pages
                 }
                 catch
                 {
-                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadfilepossiblereason") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" + 
-                                                      Constants.ResourceLoader.GetString("pathfilechanged"));
+                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadFolderBackgroundPic") + " ： " +
+													  path + "\n\r" +
+													  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
+                                                      Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
                 }
             }
         }

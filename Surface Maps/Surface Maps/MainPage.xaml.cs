@@ -263,6 +263,7 @@ namespace Surface_Maps
             {
                 try
                 {
+                    StorageFile sf = await Windows.Storage.StorageFile.GetFileFromPathAsync(storageFile.Path);
                     StorageItemThumbnail fileThumbnail = await storageFile.GetThumbnailAsync(ThumbnailMode.SingleItem, 800);
                     BitmapImage bitmapImage = new BitmapImage();
                     bitmapImage.SetSource(fileThumbnail);
@@ -272,10 +273,9 @@ namespace Surface_Maps
                 }
                 catch
                 {
-                    //Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("dontsupportnonlocalfile"));
-                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadfilepossiblereason") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" + 
-                                                      Constants.ResourceLoader.GetString("pathfilechanged"));
+					lifeMap.ImagePath = "";
+                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2cannotreadfile") + " ： " + storageFile.Path + "\n\r" +
+                                                      Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess"));
                 }
             }
             else
@@ -303,9 +303,11 @@ namespace Surface_Maps
                 lifeMap.Image = bitmapImage;
                 Helper.CreateToastNotifications(Constants.ResourceLoader.GetString("UpdatedLiftMapBackground"));
             }
-            catch
+            catch(Exception exp)
             {
-
+				lifeMap.ImagePath = "";
+				Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2cannotreadfile") + " ： " + exp.Message + "\n\r" +
+                                                  Constants.ResourceLoader.GetString("2possiblereasoncannotaccessnonlocalfile"));
             }
         }
 

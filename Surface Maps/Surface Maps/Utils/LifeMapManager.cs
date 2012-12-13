@@ -66,6 +66,7 @@ namespace Surface_Maps.Utils
             var data = await Helper.GetContent<ObservableCollection<DataModel.LifeMapStructure>>(Utils.Constants.NamingListLifeMaps);
             if (data != null) LifeMaps = new ObservableCollection<DataModel.LifeMapStructure>(data);
 			if(LifeMaps == null) return;
+			bool hasproblem = false;
             for (int i = 0; i < LifeMaps.Count; i++)
             {
 				try
@@ -73,22 +74,20 @@ namespace Surface_Maps.Utils
                     if (LifeMaps[i].ImagePath != "")
                     {
                         StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(LifeMaps[i].ImagePath);
-                        if (file != null)
-                            await setAlbumProfileImage(LifeMaps[i], file);
-                    }
-                    else
-                    {
+                        if (file != null) await setAlbumProfileImage(LifeMaps[i], file);
                     }
 				}
                 catch
                 {
-                    //Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadfilepossiblereason") + "\n\r" +
-                    //                                  Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" +
-                    //                                  Constants.ResourceLoader.GetString("pathfilechanged"));
+					hasproblem = true;
                 }
                 lifeMaps[i].Width = Utils.Constants.ScreenWidth / 5;
                 lifeMaps[i].Height = Utils.Constants.ScreenHeight - 320;
             }
+			if(hasproblem == true)
+				Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadSeveralMapProfile") + "\n\r" +
+                                                  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
+												  Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
             await loadDefaultLifeMap();
         }
 
@@ -135,7 +134,7 @@ namespace Surface_Maps.Utils
 
         private async Task setAlbumProfileImage(DataModel.LifeMapStructure lifeMap, StorageFile file)
         {
-            StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 800);
+            StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 700);
             BitmapImage bitmapImage = new BitmapImage();
             bitmapImage.SetSource(fileThumbnail);
             lifeMap.Image = bitmapImage;

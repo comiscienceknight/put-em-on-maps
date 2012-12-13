@@ -86,7 +86,7 @@ namespace Surface_Maps.Pages
                     pageTitle.Text = parameter.albumName;
                 dispatcherTimer2 = new DispatcherTimer();
                 dispatcherTimer2.Tick += dispatcherTimer2_Tick;
-                dispatcherTimer2.Interval = new TimeSpan(0, 0, 0, 0, 5);
+                dispatcherTimer2.Interval = new TimeSpan(0, 0, 0, 0, 2);
                 dispatcherTimer2.Start();
             }
             catch (Exception excep) { Constants.ShowErrorDialog(excep, "PhotoPlayPage - OnNavigatedTo"); }
@@ -120,7 +120,7 @@ namespace Surface_Maps.Pages
             {
                 dispatcherTimer = new DispatcherTimer();
                 dispatcherTimer.Tick += dispatcherTimer_Tick;
-                dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
+                dispatcherTimer.Interval = new TimeSpan(0, 0, 2);
                 dispatcherTimer.Start();
                 BottomAppBar.IsOpen = false;
                 TopAppBar.IsOpen = false;

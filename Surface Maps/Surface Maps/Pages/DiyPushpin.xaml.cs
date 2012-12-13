@@ -190,7 +190,6 @@ namespace Surface_Maps.Pages
 
         private async void asyncvoidDownloadAndOpenFile()
         {
-            MessageDialog dialog = null;
             try
             {
                 var file = await Windows.Storage.StorageFile.GetFileFromPathAsync(this.PushPinDataSource.FilePath);
@@ -199,9 +198,10 @@ namespace Surface_Maps.Pages
             }
             catch (Exception e)
             {
-                dialog = new MessageDialog(Utils.Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" + e.Message);
+				Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2cannotreadfile") + "\n\r" +
+												  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" + 
+											      Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
             }
-            if (dialog != null) await dialog.ShowAsync();
         }
 
         private async void Button_RemoveAPushPin_Click(object sender, RoutedEventArgs e)

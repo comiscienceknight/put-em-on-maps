@@ -30,7 +30,6 @@ using Windows.Storage.Streams;
 using Windows.Storage.FileProperties;
 using Windows.System;
 using Surface_Maps.Utils;
-using Windows.UI.Popups;
 using Windows.UI.Xaml.Media.Animation;
 
 // The Item Detail Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234232

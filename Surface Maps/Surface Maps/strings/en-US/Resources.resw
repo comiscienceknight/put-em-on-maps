@@ -465,4 +465,29 @@
   <data name="Uid_Button_AddSingleFile.Content" xml:space="preserve">
     <value>Add a single file</value>
   </data>
+  <data name="2cannotreadfile" xml:space="preserve">
+    <value>读取文件失败</value>
+  </data>
+  <data name="2possiblereasondocumentlibararycannotaccess" xml:space="preserve">
+    <value>读取失败可能原因： 此软件开发账户为个人开发账户，只允许访问本地的账户指定文件夹内容（照片，视频，音乐），以及与此文件夹相连的其他本地文件夹\n
+		   解决方案： 使用windows8系统特别解决方案，将您想访问的文件夹（比如文档文件夹）添加到照片（文件夹）中。添加后，您可以在照片文件夹中看到文档文件夹的内容，同时此软件也可以访问这些内容\n
+		   补充： 我们将尽快申请一个公司形式的开发账户（我们目前是私人团体）</value>
+  </data>
+  <data name="2possiblereasonpathfilechanged" xml:space="preserve">
+    <value>读取失败可能原因： 您修改了源文件存储的位置(或更改了文件名)，导致系统无法通过原始链接找到文件夹\n
+		   解决方案： 重新建立文件，或将源文件换回原位置（以及换回文件名）</value>
+  </data>
+  <data name="2CannotReadSeveralMapProfile" xml:space="preserve">
+    <value>一些地图封面图片读取失败</value>
+  </data>
+  <data name="2possiblereasoncannotaccessnonlocalfile" xml:space="preserve">
+    <value>读取失败可能原因： 有可能是从远端网络读取数据时出现错误\n
+		   请您通过程序“设置”中的“关于我们和反馈”获取我们的联系方式，与我们联系，描述您的错误</value>
+  </data>
+  <data name="2CannotReadFolderBackgroundPic" xml:space="preserve">
+    <value>文件夹背景图片读取失败</value>
+  </data>
+  <data name="2severalpicturescannotread" xml:space="preserve">
+    <value>无法读取其中的一部分照片</value>
+  </data>
 </root>

@@ -225,7 +225,7 @@ namespace Surface_Maps.Pages
             try
             {
                 if (VariableGridView.SelectedItem == null) return;
-				BottomAppBar.IsOpen = false;
+				BottomAppBar.IsOpen = true;
             }
             catch (Exception excep) { Utils.Constants.ShowErrorDialog(excep, "PhotoExposition - variableGridView_SelectionChanged"); }
         }

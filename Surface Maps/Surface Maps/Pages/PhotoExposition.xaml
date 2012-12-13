@@ -77,7 +77,7 @@
             <!-- Horizontal scrolling grid used in most view states -->
             <local:VariableGridView Grid.Row="1"
                                 x:Name="VariableGridView"
-                                Padding="116,0,116,46"
+                                Padding="116,0,116,46" SelectionChanged="variableGridView_SelectionChanged"
                                 ItemsSource="{Binding ListPhoto}">
                 <local:VariableGridView.ItemTemplate>
                     <DataTemplate>

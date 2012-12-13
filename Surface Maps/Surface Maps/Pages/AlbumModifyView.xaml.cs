@@ -115,7 +115,8 @@ namespace Surface_Maps.Pages
                 }
                 pageTitle.Text = albumInfo.AlbumName;
                 if (ifexception == true)
-                    Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("pathfilechanged"));
+                    Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2severalpicturescannotread") + "\n\r" +
+												Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
             }
             else pageTitle.Text = "New Album";
         }
@@ -189,8 +190,9 @@ namespace Surface_Maps.Pages
             }
 
             if (intialcount != ListPhoto.Count)
-                Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadallphotos") + "\n\r" +
-                                                  Constants.ResourceLoader.GetString("documentlibararycannotaccess"));
+                Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2severalpicturescannotread") + "\n\r" +
+                                                  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
+												  Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
             await Utils.FilesSaver<DataModel.PhotoDataStructure>.SaveData(Utils.LifeMapManager.GetInstance().ListOfAllPhotos, Utils.LifeMapManager.GetInstance().SelectedLifeMap.Id + Constants.NamingListPhotos);
             await Helper.CreateLocalNotifications();
         }
@@ -226,11 +228,13 @@ namespace Surface_Maps.Pages
         #region add photo
         private async void Button_AddNewPhoto_Click(object sender, RoutedEventArgs e)
         {
+            bool localfilereadfail = false;
+            string cannotreadfilepath = "";
             try
             {
                 IReadOnlyList<StorageFile> fileList = await selectPhotosFromFilePicker();
 				Constants.StartLoadingAnimation(MainGrid);
-                if (fileList.Count <= 0) return;
+                if (fileList == null || fileList.Count <= 0) return;
                 foreach (StorageFile file in fileList)
                 {
                     if((from datas in listPhoto where datas.PhotoData.ImagePath == file.Path select datas).Count() == 0)
@@ -240,25 +244,18 @@ namespace Surface_Maps.Pages
 						{
 							pds = await saveNonLocalFileToLocalAndAddPhotoToList(file);
 							if(pds != null)
-							{
-								await affectBitmapImageToNewDisplayablePhotoObject(file, pds);
 								ListPhoto.Add(pds);
-							}
 						}
 						else //如果是本地的，就从本地读取，如果是非法范围内的文件，提示用户解决方案
 						{
 							try
 							{
-								//看看skydrive下和facebook下的路径是否可以访问
 								pds = createNewDisplayablePhotoObject(file);
 								await affectBitmapImageToNewDisplayablePhotoObject(file, pds);
 								ListPhoto.Add(pds);
 							}
-							catch
-							{
-								Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadSeveralFile") + " " +
-															file.Path + "\n\r" +
-															Constants.ResourceLoader.GetString("2CannotReadLocalFileReasonAndResolution"));
+							catch{ localfilereadfail = true; 
+								cannotreadfilepath = file.Path;
 							}
 						}
                     }
@@ -267,35 +264,45 @@ namespace Surface_Maps.Pages
             catch (Exception excep) { Constants.ShowErrorDialog(excep, "AlbumModifyView - Button_AddNewPhoto_Click"); }
             justSaved = false;
 			Constants.StopLoadingAnimation(MainGrid);
+			if(localfilereadfail == true)
+				Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2severalpicturescannotread") + " ex." + cannotreadfilepath + "\n\r" +
+										    Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" + 
+										    Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
         }
 		
-		private async Task<PhotoDataStructure> saveNonLocalFileToLocalAndAddPhotoToList(StorageFile file)
+		private async Task<PhotoDataStructure> saveNonLocalFileToLocalAndAddPhotoToList(StorageFile storageFile)
 		{
 			PhotoDataStructure pds = null;
 			try
 			{
-				MessageDialog dialog = new MessageDialog(Utils.Constants.ResourceLoader.GetString("2MustSaveNonLocalFileToLocal_ButParticuliarlyForSeveralCase"),
-												 Utils.Constants.ResourceLoader.GetString("notification"));
-				dialog.Commands.Add(new UICommand(Utils.Constants.ResourceLoader.GetString("2Ok_SaveNonLocalFileToLocal"), p =>
-				{	
-					//http://msdn.microsoft.com/en-us/library/windows/apps/hh465174.aspx
-					//Integrating with file picker contracts
-					//http://msdn.microsoft.com/en-us/library/windows/apps/hh465255.aspx
-					//Quickstart: Receiving shared content 
-					//http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh973051.aspx
-					//How to receive an image
-					
-					//http://msdn.microsoft.com/en-us/library/windows/apps/xaml/JJ150592(v=win.10).aspx
-					//How to save files through file pickers
-					
-					//
-				}));
-				dialog.Commands.Add(new UICommand(Utils.Constants.ResourceLoader.GetString("2No_IgnoreThisFile")));
-				await dialog.ShowAsync();
+				IRandomAccessStream iras = await storageFile.OpenReadAsync();
+                Windows.Storage.Streams.Buffer MyBuffer = new Windows.Storage.Streams.Buffer(Convert.ToUInt32(iras.Size));
+                IBuffer iBuf = await iras.ReadAsync(MyBuffer, MyBuffer.Capacity, InputStreamOptions.None);
+                string filename = DateTime.Now.ToString().Replace(":", "").Replace("/", "_").Replace("\\", "_").Replace(".", "").Replace("\"", "") + "lifemapcover" + storageFile.Name;
+                string filePath = await Helper.SaveImages(iBuf, filename);
+      
+                StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(filePath);
+                StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 600);
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.SetSource(fileThumbnail);
+
+				pds = new PhotoDataStructure()
+				{
+					PhotoData = new DataModel.PhotoDataStructure()
+					{
+						AlbumId = albumInfo.Id,
+						Latitude = albumInfo.Latitude,
+						Longitude = albumInfo.Longitude,
+						ImagePath = filePath,
+						ItemId = DateTime.Now.ToString() + file.Path
+					},
+					Image = bitmapImage,
+					ImageWidthHeight = Constants.HalfScreenHeight - 30
+				};
 			}
-			catch (Exception exp)
+			catch
 			{
-				Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2FileLocalizationFailed") + "\n\r" + exp.Message);
+				//Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2FileLocalizationFailed") + "\n\r" + exp.Message);
 			}
 			return pds;
 		}
@@ -313,10 +320,18 @@ namespace Surface_Maps.Pages
 
         private static async Task affectBitmapImageToNewDisplayablePhotoObject(StorageFile file, PhotoDataStructure pds)
         {
-            StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 900);
-            BitmapImage bitmapImage = new BitmapImage();
-            bitmapImage.SetSource(fileThumbnail);
-            pds.Image = bitmapImage;
+			try
+			{
+				if(file == null || pds == null) return;
+				StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 600);
+				BitmapImage bitmapImage = new BitmapImage();
+				bitmapImage.SetSource(fileThumbnail);
+				pds.Image = bitmapImage;
+			}
+			catch(Exception exp)
+			{
+				throw exp;
+			}
         }
 
         private PhotoDataStructure createNewDisplayablePhotoObject(StorageFile file)
@@ -397,9 +412,10 @@ namespace Surface_Maps.Pages
                 }
                 catch
                 {
-                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadfilepossiblereason") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("pathfilechanged"));
+                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadFolderBackgroundPic") + " ： " +
+													  path + "\n\r" +
+													  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
+                                                      Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
                 }
             }
         }

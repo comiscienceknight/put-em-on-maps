@@ -99,9 +99,10 @@ namespace Surface_Maps.Pages
                 }
                 catch
                 {
-                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("cannotreadfilepossiblereason") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("documentlibararycannotaccess") + "\n\r" +
-                                                      Constants.ResourceLoader.GetString("pathfilechanged"));
+                    Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadFolderBackgroundPic") + " ： " +
+													  path + "\n\r" +
+													  Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
+                                                      Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
                 }
             }
         }
@@ -181,21 +182,31 @@ namespace Surface_Maps.Pages
                 int count = 0;
                 foreach (StorageFile file in fileList)
                 {
-                    int sfd = (from datas in listVideo where datas.VideoData.VideoPath == file.Path select datas).Count();
-                    if (sfd == 0)
+                    if ((from datas in listVideo where datas.VideoData.VideoPath == file.Path select datas).Count() == 0)
                     {
                         VideoDataStructure pds;
-                        try
-                        { 
-                            pds= createNewDisplayableVideoObject(file);
-                        }
-                        catch
-                        {
-                            Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("dontsupportnonlocalfile"));
-                            break;
-                        }
-                        await affectBitmapImageToNewDisplayablePhotoObject(file, pds);
-                        ListVideo.Add(pds);
+						if(file.Path == "") //一般来讲，如果file.Path == "" 说明他是非本地的数据，那就要保存到本地再说
+						{
+							pds = await saveNonLocalFileToLocalAndAddVideoToList(file);
+							if(pds != null)
+								ListVideo.Add(pds);
+						}
+						else
+						{
+	                        try
+							{ 
+								pds= createNewDisplayableVideoObject(file);
+							}
+							catch
+							{
+								Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2severalvideoscannotread") + " ex." + file.Path  + "\n\r" +
+															Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" + 
+															Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
+								break;
+							}
+							await affectBitmapImageToNewDisplayablePhotoObject(file, pds);
+							ListVideo.Add(pds);
+						}
                     }
                     count++;
                 }
@@ -204,6 +215,44 @@ namespace Surface_Maps.Pages
             justSaved = false;
         }
 
+		private async Task<VideoDataStructure> saveNonLocalFileToLocalAndAddVideoToList(StorageFile storageFile)
+		{
+			VideoDataStructure pds = null;
+			try
+			{
+				IRandomAccessStream iras = await storageFile.OpenReadAsync();
+                Windows.Storage.Streams.Buffer MyBuffer = new Windows.Storage.Streams.Buffer(Convert.ToUInt32(iras.Size));
+                IBuffer iBuf = await iras.ReadAsync(MyBuffer, MyBuffer.Capacity, InputStreamOptions.None);
+                string filename = DateTime.Now.ToString().Replace(":", "").Replace("/", "_").Replace("\\", "_").Replace(".", "").Replace("\"", "") + "lifemapcover" + storageFile.Name;
+                string filePath = await Helper.SaveImages(iBuf, filename);
+      
+                StorageFile file = await Windows.Storage.StorageFile.GetFileFromPathAsync(filePath);
+                StorageItemThumbnail fileThumbnail = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 600);
+                BitmapImage bitmapImage = new BitmapImage();
+                bitmapImage.SetSource(fileThumbnail);
+
+				pds = new VideoDataStructure()
+				{
+					VideoData = new DataModel.VideoDataStructure()
+					{
+						AlbumId = albumInfo.Id,
+						Latitude = albumInfo.Latitude,
+						Longitude = albumInfo.Longitude,
+						VideoPath = filePath,
+						ItemId = DateTime.Now.ToString() + file.Path
+					},
+					Image = bitmapImage,
+					VideoWidthHeight = Constants.HalfScreenHeight - 35,
+					VideoWidth = (Constants.HalfScreenHeight - 35) * (Convert.ToDouble(bitmapImage.PixelWidth) / Convert.ToDouble(bitmapImage.PixelHeight))
+				};
+			}
+			catch (Exception exp)
+			{
+				//Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2FileLocalizationFailed") + "\n\r" + exp.Message);
+			}
+			return pds;
+		}
+		
         private static async Task<IReadOnlyList<StorageFile>> selectPhotosFromFilePicker()
         {
             FileOpenPicker openPicker = new FileOpenPicker();
