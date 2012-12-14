@@ -522,4 +522,27 @@
   <data name="2howtouseshowvideoalbumpage" xml:space="preserve">
     <value>文件选择器：除了本地文件夹（音乐，照片，视频）之外，还可以访问可触及到的网络中的数据</value>
   </data>
+  
+  <data name="Uid_Button_StartUsing.Text" xml:space="preserve">
+    <value>敲击开始使用 Put'em on maps</value>
+  </data>
+  <data name="Uid_TextBox_PresentationTitle.Text" xml:space="preserve">
+    <value>Put'em on maps, 把文件（文档文件，多媒体文件）放在地图上：</value>
+  </data>
+  <data name="Uid_TextBox_PresentationContent1.Text" xml:space="preserve">
+    <value>我喜欢旅行，把自己旅游的照片按照地理位置，时间组成专辑放在地图上，把旅游日志也放在地图上，把自己制作的ppt和pdf旅游文件也放在地图上！在地图上直接打开文件，打开专辑，轻松浏览 :)</value>
+  </data>
+  <data name="Uid_TextBox_PresentationContent2.Text" xml:space="preserve">
+    <value>明天开会要展示下半年演出的地点场所情况，那把自己的会议文档，会议幻灯片，会议所需视频，照片放在地图中，开会的时候轻松演示。</value>
+  </data>
+  <data name="Uid_TextBox_PresentationContent3.Text" xml:space="preserve">
+    <value>自己喜欢很多东西，经常会把同类事物的东西放在一起，比如世界各地的街头舞到，世界各地的高尔夫球场，或者朋友的具体分布，嘿嘿</value>
+  </data>
+  
+  <data name="Uid_TextBlock_TapMeToOpenBottomMenu.Text" xml:space="preserve">
+    <value>敲击我后，下方会出现操作我的菜单</value>
+  </data>
+  <data name="Uid_TextBlock_TapMeToOpenTopMenu.Text" xml:space="preserve">
+    <value>敲击我后，上方右侧会出现操作我的菜单</value>
+  </data>
 </root>

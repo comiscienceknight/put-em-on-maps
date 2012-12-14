@@ -178,6 +178,9 @@
                         </Image>
                         <Image Source="/Assets/play.png" Width="80" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding IsPlayButtonVisible}">
                         </Image>
+						<TextBlock x:Uid="Uid_TextBlock_TapMeToOpenTopMenu" Foreground="#DDFFFFFF" TextAlignment="Center"
+					    FontSize="22" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="5" FontWeight="Light"
+						TextWrapping="Wrap" />
                     </Grid>
                 </Border>
                 <Grid VerticalAlignment="Bottom" Height="85">

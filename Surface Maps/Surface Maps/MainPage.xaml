@@ -112,6 +112,9 @@
                             </Image>
                             <Image Source="{Binding Image}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" >
                             </Image>
+							<TextBlock x:Uid="Uid_TextBlock_TapMeToOpenBottomMenu" Foreground="#DDFFFFFF" TextAlignment="Center"
+                                       FontSize="22" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="5" FontWeight="Light"
+                                       TextWrapping="Wrap" />
                         </Grid>
 
                         <Grid VerticalAlignment="Bottom" Margin="0" Height="80">
