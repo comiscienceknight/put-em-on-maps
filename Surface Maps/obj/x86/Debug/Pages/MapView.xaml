@@ -1,0 +1,78 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="Surface_Maps.Pages.MapView"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Surface_Maps.Pages"
+    xmlns:common="using:Surface_Maps.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:bm="using:Bing.Maps"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <!-- Collection of items displayed by this page -->
+        <CollectionViewSource
+            x:Name="itemsViewSource"
+            Source="{Binding Items}"/>
+    </Page.Resources>
+
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" x:Name="MainGrid">
+        <bm:Map x:ConnectionId='1' x:Name="map" PreloadArea="Small" ShowScaleBar="True"                     Culture="zh-CHS"
+                Credentials="Av8IpZMzQaGGLxkNVah_aPtEqyoZE2f4nB-GwtBhnqbRgPXqxMt-06ujkYZKFU7G" >
+        </bm:Map>
+        <Grid x:Name="Grid_HandIndicate" Visibility="Collapsed" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,30,0" Background="#AA000000" Height="250" Width="250">
+            <Image Source="/Assets/Images/u_03.png" Margin="35,20,45,20" VerticalAlignment="Top" />
+            <TextBlock x:Name="TextBlock_MapHandIndicate" Text="Tap to somewhere on the map to create a collection pushpin" VerticalAlignment="Bottom" TextAlignment="Center"
+                       Margin="15" FontSize="18" FontWeight="Light" TextWrapping="Wrap" />
+        </Grid>
+        <Grid x:Name="Grid_PageLoading">
+            <Rectangle Fill="DarkBlue" Opacity="0.2" />
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Loading" Foreground="White" FontSize="20"
+                           FontWeight="SemiLight" />
+                <ProgressBar x:Name="ProgressBar_PageLoading"
+                             IsIndeterminate="True" Height="10" Width="200"
+                             Margin="5,0" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup>
+                <VisualState x:Name="FullScreenLandscape">
+                </VisualState>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                </VisualState>
+
+                <!--
+                    The back button and title have different styles when snapped, and the list representation is substituted
+                    for the grid displayed in all other view states
+                -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AppBar_TopAppBar" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="AppBar_BottomAppBar" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                        </ObjectAnimationUsingKeyFrames>
+
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="itemListView" Storyboard.TargetProperty="Visibility">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>
+

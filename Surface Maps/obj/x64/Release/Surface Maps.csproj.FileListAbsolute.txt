@@ -1,0 +1,72 @@
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\resources.pri
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\AppxManifest.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\Surface Maps.build.appxrecipe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\Bing.Maps.winmd
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\x64\Release\Bing.Maps.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\App.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\App.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Common\StandardStyles.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Common\StandardStyles.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\MainPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\MainPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumCollectionView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumCollectionView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumMediasCommentModifyFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumMediasCommentModifyFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumModifyView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumModifyView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumNameDateModifyFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumNameDateModifyFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\ChangeCollectionNameFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\ChangeCollectionNameFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\DiyPushpin.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\DiyPushpin.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\MapView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\MapView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoExposition.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoExposition.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoPlayPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoPlayPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoAlbumModifyView.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoAlbumModifyView.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoExposition.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoExposition.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\FeedbackSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\FeedbackSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\HelpSettingsFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\HelpSettingsFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\LanguagesSettingFlyout.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\LanguagesSettingFlyout.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\XamlTypeInfo.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\App.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\MainPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumCollectionView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumMediasCommentModifyFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumModifyView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\AlbumNameDateModifyFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\ChangeCollectionNameFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\DiyPushpin.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\MapView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoExposition.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\PhotoPlayPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoAlbumModifyView.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Pages\VideoExposition.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\FeedbackSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\HelpSettingsFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\SettingCommands\LanguagesSettingFlyout.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Common\StandardStyles.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\Surface Maps.csproj.GenerateResource.Cache
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\priconfig.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\layout.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\resources.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\pri.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\LanguageQualifiers.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\ProjectArchitectures.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\priconfig.xml.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\layout.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\resources.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\x64\Release\pri.resfiles.intermediate

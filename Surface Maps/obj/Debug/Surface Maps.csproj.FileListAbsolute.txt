@@ -1,0 +1,33 @@
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\Debug\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\Debug\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\Debug\resources.pri
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\Debug\AppxManifest.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\bin\Debug\Surface Maps.build.appxrecipe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\App.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\App.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\Common\StandardStyles.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\Common\StandardStyles.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupedItemsPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupedItemsPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupDetailPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupDetailPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\ItemDetailPage.g.i.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\ItemDetailPage.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\XamlTypeInfo.g.cs
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\App.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\Common\StandardStyles.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupedItemsPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\GroupDetailPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\ItemDetailPage.xaml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\Surface Maps.exe
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\priconfig.xml.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\layout.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\resources.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\pri.resfiles.intermediate
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\priconfig.xml
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\layout.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\resources.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\pri.resfiles
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\LanguageQualifiers.txt
+F:\Project\MyWorld\Surface Maps\Surface Maps\obj\Debug\ProjectArchitectures.txt

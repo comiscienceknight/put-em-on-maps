@@ -1,0 +1,15 @@
+Assets\24x24.png
+Assets\BG_01.png
+Assets\Images\u_03.png
+Assets\Logo.png
+Assets\SmallLogo.png
+Assets\SplashScreen.png
+Assets\StoreLogo.png
+Assets\widelogo.png
+App.xaml
+Common\StandardStyles.xaml
+MainPage.xaml
+Pages\MapView.xaml
+SettingCommands\FeedbackSettingsFlyout.xaml
+SettingCommands\HelpSettingsFlyout.xaml
+SettingCommands\LanguagesSettingFlyout.xaml
