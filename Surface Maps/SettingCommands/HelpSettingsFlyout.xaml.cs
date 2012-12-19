@@ -80,9 +80,25 @@ namespace Surface_Maps.SettingCommands
             Image_Guide4.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtouseeditalbumpagepicuri"), UriKind.RelativeOrAbsolute));
             TextBlock_HelpPage4Text.Text = Utils.Constants.ResourceLoader.GetString("2howtouseeditalbumpage");
 
+            TextBlock_HelpPage5Title.Text = Utils.Constants.ResourceLoader.GetString("2howtouseshowalbumpagetitle");
+            Image_Guide5.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtouseshowalbumpagepicuri"), UriKind.RelativeOrAbsolute));
+            TextBlock_HelpPage5Text.Text = Utils.Constants.ResourceLoader.GetString("2howtouseshowalbumpage");
+
+            TextBlock_HelpPage6Title.Text = Utils.Constants.ResourceLoader.GetString("2howtouseshowpicspagetitle");
+            Image_Guide6.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtouseshowpicspagepicuri"), UriKind.RelativeOrAbsolute));
+            TextBlock_HelpPage6Text.Text = Utils.Constants.ResourceLoader.GetString("2howtouseshowpicspage");
+
             TextBlock_HelpPage7Title.Text = Utils.Constants.ResourceLoader.GetString("2howtousesmalltrickpagetitle");
             Image_Guide7.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtousesmalltrickpagepicuri"), UriKind.RelativeOrAbsolute));
             TextBlock_HelpPage7Text.Text = Utils.Constants.ResourceLoader.GetString("2howtousesmalltrickpage");
+
+            TextBlock_HelpPage8Title.Text = Utils.Constants.ResourceLoader.GetString("2howtouseopensinglefiletitle");
+            Image_Guide8.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtouseopensinglefilepicuri"), UriKind.RelativeOrAbsolute));
+            TextBlock_HelpPage8Text.Text = Utils.Constants.ResourceLoader.GetString("2howtouseopensinglefile");
+
+            TextBlock_HelpPage9Title.Text = Utils.Constants.ResourceLoader.GetString("2howtouseopenvideoalbumtitle");
+            Image_Guide9.Source = new BitmapImage(new Uri(Utils.Constants.ResourceLoader.GetString("2howtouseopenvideoalbumtitlepicuri"), UriKind.RelativeOrAbsolute));
+            TextBlock_HelpPage9Text.Text = Utils.Constants.ResourceLoader.GetString("2howtouseopenvideoalbum");
 
         }
 
