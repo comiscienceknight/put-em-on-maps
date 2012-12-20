@@ -496,7 +496,7 @@
     <value>name album命名专辑；add, delete photos添加、删除照片；Add comments to photos给照片注释； Edit video album is same as this page编辑视频专辑页面与此页基本相同</value>
   </data>
   <data name="2howtouseeditalbumpagepicuri" xml:space="preserve">
-    <value>ms-appx:///Assets/Screenshot/ScreenshotCN4.jpg</value>
+    <value>ms-appx:///Assets/Screenshot/ScreenshotUS4.jpg</value>
   </data>
   <data name="2howtouseeditalbumpagetitle" xml:space="preserve">
     <value>Edit photo album编辑照片专辑页面</value>
@@ -563,5 +563,29 @@
   </data>
   <data name="2severalvideoscannotread" xml:space="preserve">
     <value>Can not read some videos.无法读取其中的一部分视频</value>
+  </data>
+  <data name="2howtouseopensinglefile" xml:space="preserve">
+    <value>打开单独文件</value>
+  </data>
+  <data name="2howtouseopensinglefilepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN8.jpg</value>
+  </data>
+  <data name="2howtouseopensinglefiletitle" xml:space="preserve">
+    <value>打开单独文件</value>
+  </data>
+  <data name="2howtouseopenvideoalbum" xml:space="preserve">
+    <value>左侧为应用本身的侧栏模式显示，右侧是win8默认视频浏览器</value>
+  </data>
+  <data name="2howtouseopenvideoalbumtitle" xml:space="preserve">
+    <value>浏览视频专辑</value>
+  </data>
+  <data name="2howtouseopenvideoalbumtitlepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN9.jpg</value>
+  </data>
+  <data name="2howtouseshowalbumpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotUS5.jpg</value>
+  </data>
+  <data name="2howtouseshowpicspagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotUS6.jpg</value>
   </data>
 </root>

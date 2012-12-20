@@ -465,59 +465,6 @@
   <data name="Uid_Button_AddSingleFile.Content" xml:space="preserve">
     <value>Ajouter un fichier</value>
   </data>
-  <data name="2cannotreadfile" xml:space="preserve">
-    <value>L'accés refusé à un fichier</value>
-  </data>
-  <data name="2possiblereasondocumentlibararycannotaccess" xml:space="preserve">
-    <value>La raison possible： 此软件开发账户为个人开发账户，只允许访问本地的账户指定文件夹内容（照片，视频，音乐），以及与此文件夹相连的其他本地文件夹\n
-		   解决方案： 使用windows8系统特别解决方案，将您想访问的文件夹（比如文档文件夹）添加到照片（文件夹）中。添加后，您可以在照片文件夹中看到文档文件夹的内容，同时此软件也可以访问这些内容\n
-		   补充： 我们将尽快申请一个公司形式的开发账户（我们目前是私人团体）</value>
-  </data>
-  <data name="2possiblereasonpathfilechanged" xml:space="preserve">
-    <value>读取失败可能原因： 您修改了源文件存储的位置(或更改了文件名)，导致系统无法通过原始链接找到文件夹\n
-		   解决方案： 重新建立文件，或将源文件换回原位置（以及换回文件名）</value>
-  </data>
-  <data name="2CannotReadSeveralMapProfile" xml:space="preserve">
-    <value>一些地图封面图片读取失败</value>
-  </data>
-  <data name="2possiblereasoncannotaccessnonlocalfile" xml:space="preserve">
-    <value>读取失败可能原因： 有可能是从远端网络读取数据时出现错误\n
-		   请您通过程序“设置”中的“关于我们和反馈”获取我们的联系方式，与我们联系，描述您的错误</value>
-  </data>
-  <data name="2CannotReadFolderBackgroundPic" xml:space="preserve">
-    <value>文件夹背景图片读取失败</value>
-  </data>
-  <data name="2severalpicturescannotread" xml:space="preserve">
-    <value>无法读取其中的一部分照片</value>
-  </data>
-  <data name="2severalvideoscannotread" xml:space="preserve">
-    <value>无法读取其中的一部分视频</value>
-  </data>
-  <data name="2howtousemainpage" xml:space="preserve">
-    <value>首页：添加、删除地图；给每个地图加入主题（命名），修改地图的封面图片；
-    打开地图至“地图页面（图片2）”</value>
-  </data>
-  <data name="2howtousemapview" xml:space="preserve">
-    <value>地图页面：在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹；
-    打开一个文件（上图）或文件夹（至“文件夹页面（图片3）”）</value>
-  </data>
-  <data name="2howtousefolderpage" xml:space="preserve">
-    <value>文件夹页面：命名文件夹，设定日期；设置文件夹内背景图片；添加照片或视频专辑
-    删除专辑；编辑专辑（至“编辑照片专辑页面（图片4）”）；打开播放专辑（至“照片专辑展示页面（图片5）”）</value>
-  </data>
-  <data name="2howtouseeditalbumpage" xml:space="preserve">
-    <value>编辑照片专辑页面：命名专辑；添加、删除照片；给照片注释
-    编辑视频专辑页面与页基本相同</value>
-  </data>
-  <data name="2howtouseshowalbumpage" xml:space="preserve">
-    <value>照片专辑展示页面：列表展示；选择播放（至“播放照片页面（图片6）”）</value>
-  </data>
-  <data name="2howtouseshowpicspage" xml:space="preserve">
-    <value>播放照片页面：幻灯片自动播放；手动播放</value>
-  </data>
-  <!--<data name="2howtouseshowvideoalbumpage" xml:space="preserve">
-    <value>文件选择器：除了本地文件夹（音乐，照片，视频）之外，还可以访问可触及到的网络中的数据</value>
-  </data>-->
   <data name="Uid_Button_StartUsing.Text" xml:space="preserve">
     <value>敲击开始使用 Put'em on maps</value>
   </data>
@@ -538,5 +485,113 @@
   </data>
   <data name="Uid_TextBlock_TapMeToOpenTopMenu.Text" xml:space="preserve">
     <value>敲击我后，上方右侧会出现操作我的菜单</value>
+  </data>
+  <data name="2cannotreadfile" xml:space="preserve">
+    <value>读取文件失败</value>
+  </data>
+  <data name="2CannotReadFolderBackgroundPic" xml:space="preserve">
+    <value>文件夹背景图片读取失败</value>
+  </data>
+  <data name="2CannotReadSeveralMapProfile" xml:space="preserve">
+    <value>一些地图封面图片读取失败</value>
+  </data>
+  <data name="2howtouseeditalbumpage" xml:space="preserve">
+    <value>命名专辑；添加、删除照片；给照片注释； 编辑视频专辑页面与此页基本相同</value>
+  </data>
+  <data name="2howtouseeditalbumpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotFR4.jpg</value>
+  </data>
+  <data name="2howtouseeditalbumpagetitle" xml:space="preserve">
+    <value>编辑照片专辑页面</value>
+  </data>
+  <data name="2howtousefolderpage" xml:space="preserve">
+    <value>命名文件夹，设定日期；设置文件夹内背景图片；添加照片或视频专辑；删除专辑；编辑专辑（至“编辑照片专辑页面”）；打开播放专辑（至“照片专辑展示页面”）</value>
+  </data>
+  <data name="2howtousefolderpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN3.jpg</value>
+  </data>
+  <data name="2howtousefolderpagetitle" xml:space="preserve">
+    <value>文件夹页面</value>
+  </data>
+  <data name="2howtousemainpage" xml:space="preserve">
+    <value>首页：添加、删除地图；给每个地图加入主题（命名），修改地图的封面图片； 打开地图至“地图页面”</value>
+  </data>
+  <data name="2howtousemainpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN1.jpg</value>
+  </data>
+  <data name="2howtousemainpagetitle" xml:space="preserve">
+    <value>首页，地图列表</value>
+  </data>
+  <data name="2howtousemapview" xml:space="preserve">
+    <value>在地图上添加放置、删除一个文件或文件夹；移动已存在的文件或文件夹； 打开一个文件（选择打开的方式）或文件夹（至“文件夹页面”）</value>
+  </data>
+  <data name="2howtousemapviewpicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotFR2.jpg</value>
+  </data>
+  <data name="2howtousemapviewtitle" xml:space="preserve">
+    <value>地图页面</value>
+  </data>
+  <data name="2howtouseopensinglefile" xml:space="preserve">
+    <value>打开单独文件</value>
+  </data>
+  <data name="2howtouseopensinglefilepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN8.jpg</value>
+  </data>
+  <data name="2howtouseopensinglefiletitle" xml:space="preserve">
+    <value>打开单独文件</value>
+  </data>
+  <data name="2howtouseopenvideoalbum" xml:space="preserve">
+    <value>左侧为应用本身的侧栏模式显示，右侧是win8默认视频浏览器</value>
+  </data>
+  <data name="2howtouseopenvideoalbumtitle" xml:space="preserve">
+    <value>浏览视频专辑</value>
+  </data>
+  <data name="2howtouseopenvideoalbumtitlepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN9.jpg</value>
+  </data>
+  <data name="2howtouseshowalbumpage" xml:space="preserve">
+    <value>列表展示；选择播放（至“播放照片页面”）</value>
+  </data>
+  <data name="2howtouseshowalbumpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotFR5.jpg</value>
+  </data>
+  <data name="2howtouseshowalbumpagetitle" xml:space="preserve">
+    <value>照片专辑展示页面</value>
+  </data>
+  <data name="2howtouseshowpicspage" xml:space="preserve">
+    <value>幻灯片自动播放；手动播放</value>
+  </data>
+  <data name="2howtouseshowpicspagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotFR6.jpg</value>
+  </data>
+  <data name="2howtouseshowpicspagetitle" xml:space="preserve">
+    <value>播放照片页面</value>
+  </data>
+  <data name="2howtousesmalltrickpage" xml:space="preserve">
+    <value>除了从本地读取文件外，还可以从“文件选择器”中提供的其他远程地址读取文件，并且还可以使用照相机直接照相或摄像</value>
+  </data>
+  <data name="2howtousesmalltrickpagepicuri" xml:space="preserve">
+    <value>ms-appx:///Assets/Screenshot/ScreenshotCN7.jpg</value>
+  </data>
+  <data name="2howtousesmalltrickpagetitle" xml:space="preserve">
+    <value>读取文件小技巧</value>
+  </data>
+  <data name="2possiblereasoncannotaccessnonlocalfile" xml:space="preserve">
+    <value>读取失败可能原因： 有可能是从远端网络读取数据时出现错误
+解决方案： 请您通过程序“设置”中的“关于我们和反馈”获取我们的联系方式，与我们联系，描述您的错误</value>
+  </data>
+  <data name="2possiblereasondocumentlibararycannotaccess" xml:space="preserve">
+    <value>读取失败可能原因： 此软件开发账户为个人开发账户，只允许访问本地的账户指定文件夹内容（照片，视频，音乐），以及与此文件夹相连的其他本地文件夹
+解决方案： 使用windows8系统特别解决方案，将您想访问的文件夹（比如文档文件夹）添加到照片（文件夹）中。添加后，您可以在照片文件夹中看到文档文件夹的内容，同时此软件也可以访问这些内容。补充： 我们将尽快申请一个公司形式的开发账户（我们目前是私人团体）</value>
+  </data>
+  <data name="2possiblereasonpathfilechanged" xml:space="preserve">
+    <value>读取失败可能原因： 您修改了源文件存储的位置(或更改了文件名)，导致系统无法通过原始链接找到文件夹
+解决方案： 重新建立文件，或将源文件换回原位置（以及换回文件名）</value>
+  </data>
+  <data name="2severalpicturescannotread" xml:space="preserve">
+    <value>无法读取其中的一部分照片</value>
+  </data>
+  <data name="2severalvideoscannotread" xml:space="preserve">
+    <value>无法读取其中的一部分视频</value>
   </data>
 </root>
