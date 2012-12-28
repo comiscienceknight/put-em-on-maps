@@ -125,10 +125,15 @@
     <Content Include="Assets\Screenshot\ScreenshotCN2.jpg" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\Screenshot\ScreenshotCN9.jpg" />
+    <Content Include="Assets\Screenshot\ScreenshotFR1.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotFR2.jpg" />
+    <Content Include="Assets\Screenshot\ScreenshotFR3.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotFR4.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotFR5.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotFR6.jpg" />
+    <Content Include="Assets\Screenshot\ScreenshotUS1.jpg" />
+    <Content Include="Assets\Screenshot\ScreenshotUS2.jpg" />
+    <Content Include="Assets\Screenshot\ScreenshotUS3.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotUS4.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotUS5.jpg" />
     <Content Include="Assets\Screenshot\ScreenshotUS6.jpg" />

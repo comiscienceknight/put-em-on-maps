@@ -174,6 +174,9 @@
             <Grid x:ConnectionId='11'                           HorizontalAlignment="Left" Width="{Binding AlbumWidth}" Height="{Binding AlbumHeight}" Margin="10" Background="Transparent">
                 <Border Background="Transparent">
                     <Grid  VerticalAlignment="Top" Margin="0,0,0,90">
+                        <TextBlock x:Uid="Uid_TextBlock_TapMeToOpenTopMenu" Foreground="#DDFFFFFF" TextAlignment="Center"
+                                   FontSize="22" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="5" FontWeight="Light"
+						           TextWrapping="Wrap" />
                         <Image Source="{Binding ImagePath}" Stretch="UniformToFill"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" >
                         </Image>
                         <Image Source="/Assets/play.png" Width="80" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{Binding IsPlayButtonVisible}">

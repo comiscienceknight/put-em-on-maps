@@ -51,7 +51,13 @@ namespace Surface_Maps
                 Utils.Constants.HalfScreenHeight = (Utils.Constants.ScreenHeight - 230) / 2;
                 Utils.Constants.ScreenWidth = this.ActualWidth;
                 if (Data.LifeMapMgr != null)
-                    await Data.LifeMapMgr.InitializeLifeMapManager();
+                {
+                    if (await Data.LifeMapMgr.InitializeLifeMapManager() == true) // TODO: First time use, so show user guide panel
+                    {
+                        windowBounds = Window.Current.Bounds;
+                        createPopupWindowContainsFlyout("Helps");
+                    }
+                }
                 itemGridView.ItemsSource = Data.LifeMapMgr.LifeMaps;
                 itemGridView.Visibility = Windows.UI.Xaml.Visibility.Visible;
                 if (Data.LifeMapMgr.LifeMaps.Count == 1)

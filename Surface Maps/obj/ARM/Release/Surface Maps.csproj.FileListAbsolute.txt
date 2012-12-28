@@ -68,6 +68,9 @@ F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoPlayPage
 F:\Project\MyWorld\Surface Maps\Surface Maps\obj\ARM\Release\Pages\PhotoPlayPage.xaml
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.exe
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.pdb
+F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\resources.pri
+F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\AppxManifest.xml
+F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.build.appxrecipe
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Bing.Maps.winmd
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Bing.Maps.xml
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\App.g.i.cs
@@ -125,16 +128,9 @@ F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Relea
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.exe
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.pdb
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\Surface Maps.csproj.GenerateResource.Cache
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\resources.pri
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\AppxManifest.xml
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\bin\ARM\Release\Surface Maps.build.appxrecipe
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\priconfig.xml
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\layout.resfiles
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\resources.resfiles
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\pri.resfiles
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\LanguageQualifiers.txt
 F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\ProjectArchitectures.txt
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\priconfig.xml.intermediate
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\layout.resfiles.intermediate
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\resources.resfiles.intermediate
-F:\Project\MyWorld\Surface Maps 20121214\Surface Maps\Surface Maps\obj\ARM\Release\pri.resfiles.intermediate

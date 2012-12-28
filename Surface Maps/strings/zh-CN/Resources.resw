@@ -460,13 +460,13 @@
     <value>命名专辑；添加、删除照片；给照片注释； 编辑视频专辑页面与此页基本相同</value>
   </data>
   <data name="2howtouseshowalbumpage" xml:space="preserve">
-    <value>列表展示；选择播放（至“播放照片页面”）</value>
+    <value>列表展示；选择播放（至“播放照片页面（图片6）”）</value>
   </data>
   <data name="2howtouseshowalbumpagetitle" xml:space="preserve">
     <value>照片专辑展示页面</value>
   </data>
   <data name="2howtouseshowpicspage" xml:space="preserve">
-    <value>幻灯片自动播放；手动播放</value>
+    <value>播放照片页面：幻灯片自动播放；手动播放</value>
   </data>
   <data name="Uid_TextBox_PresentationTitle.Text" xml:space="preserve">
     <value>Put'em on maps, 把各种文件放在地图上</value>
@@ -518,32 +518,5 @@
   </data>
   <data name="2howtousefolderpagetitle" xml:space="preserve">
     <value>文件夹页面</value>
-  </data>
-  <data name="2howtouseopensinglefile" xml:space="preserve">
-    <value>打开单独文件</value>
-  </data>
-  <data name="2howtouseopensinglefilepicuri" xml:space="preserve">
-    <value>ms-appx:///Assets/Screenshot/ScreenshotCN8.jpg</value>
-  </data>
-  <data name="2howtouseopensinglefiletitle" xml:space="preserve">
-    <value>打开单独文件</value>
-  </data>
-  <data name="2howtouseshowalbumpagepicuri" xml:space="preserve">
-    <value>ms-appx:///Assets/Screenshot/ScreenshotCN5.jpg</value>
-  </data>
-  <data name="2howtouseshowpicspagepicuri" xml:space="preserve">
-    <value>ms-appx:///Assets/Screenshot/ScreenshotCN6.jpg</value>
-  </data>
-  <data name="2howtouseshowpicspagetitle" xml:space="preserve">
-    <value>播放照片页面</value>
-  </data>
-  <data name="2howtouseopenvideoalbum" xml:space="preserve">
-    <value>左侧为应用本身的侧栏模式显示，右侧是win8默认视频浏览器</value>
-  </data>
-  <data name="2howtouseopenvideoalbumtitle" xml:space="preserve">
-    <value>浏览视频专辑</value>
-  </data>
-  <data name="2howtouseopenvideoalbumtitlepicuri" xml:space="preserve">
-    <value>ms-appx:///Assets/Screenshot/ScreenshotCN9.jpg</value>
   </data>
 </root>

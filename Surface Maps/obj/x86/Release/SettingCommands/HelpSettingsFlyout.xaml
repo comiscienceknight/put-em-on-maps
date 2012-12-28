@@ -150,6 +150,11 @@
                             <TextBlock x:Name="TextBlock_HelpPage2Text" TextWrapping="Wrap" MaxWidth="{Binding ImagesTextWidth}" Margin="5,5,5,5" FontSize="16" FontWeight="Light"/>
                         </StackPanel>
                         <StackPanel Margin="20,0,0,0" Background="#66000000">
+                            <TextBlock x:Name="TextBlock_HelpPage8Title" Margin="5,5,5,5" FontSize="24" Text="asf" FontWeight="Light" />
+                            <Image Margin="5,5,10,5" x:Name="Image_Guide8" Stretch="Uniform" Height="{Binding ImagesHeight}" />
+                            <TextBlock x:Name="TextBlock_HelpPage8Text" TextWrapping="Wrap" MaxWidth="{Binding ImagesTextWidth}" Margin="5,5,5,5" FontSize="16" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel Margin="20,0,0,0" Background="#66000000">
                             <TextBlock x:Name="TextBlock_HelpPage3Title" Margin="5,5,5,5" FontSize="24" Text="asf" FontWeight="Light" />
                             <Image Margin="5,5,10,5" x:Name="Image_Guide3" Stretch="Uniform" Height="{Binding ImagesHeight}" />
                             <TextBlock x:Name="TextBlock_HelpPage3Text" TextWrapping="Wrap" MaxWidth="{Binding ImagesTextWidth}" Margin="5,5,5,5" FontSize="16" FontWeight="Light"/>
@@ -173,6 +178,11 @@
                             <TextBlock x:Name="TextBlock_HelpPage7Title" Margin="5,5,5,5" FontSize="24" Text="asf" FontWeight="Light" />
                             <Image Margin="5,5,10,5" x:Name="Image_Guide7" Stretch="Uniform" Height="{Binding ImagesHeight}" />
                             <TextBlock x:Name="TextBlock_HelpPage7Text" TextWrapping="Wrap" MaxWidth="{Binding ImagesTextWidth}" Margin="5,5,5,5" FontSize="16" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel Margin="20,0,0,0" Background="#66000000">
+                            <TextBlock x:Name="TextBlock_HelpPage9Title" Margin="5,5,5,5" FontSize="24" Text="asf" FontWeight="Light" />
+                            <Image Margin="5,5,10,5" x:Name="Image_Guide9" Stretch="Uniform" Height="{Binding ImagesHeight}" />
+                            <TextBlock x:Name="TextBlock_HelpPage9Text" TextWrapping="Wrap" MaxWidth="{Binding ImagesTextWidth}" Margin="5,5,5,5" FontSize="16" FontWeight="Light"/>
                         </StackPanel>
                     </StackPanel>
                 </Grid>

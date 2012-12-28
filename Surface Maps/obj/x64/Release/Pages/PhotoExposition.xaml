@@ -69,15 +69,15 @@
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Button x:ConnectionId='2' x:Name="backButton"                                 Style="{StaticResource BackButtonStyle}"/>
+                    <Button x:ConnectionId='3' x:Name="backButton"                                 Style="{StaticResource BackButtonStyle}"/>
                     <TextBlock x:Name="pageTitle" Margin="100,0,30,40" Style="{StaticResource PageHeaderTextStyle}" FontWeight="Light" />
                 </Grid>
             </Grid>
 
             <!-- Horizontal scrolling grid used in most view states -->
-            <local:VariableGridView Grid.Row="1"
+            <local:VariableGridView x:ConnectionId='2' Grid.Row="1"
                                 x:Name="VariableGridView"
-                                Padding="116,0,116,46"
+                                Padding="116,0,116,46"                                                     
                                 ItemsSource="{Binding ListPhoto}">
                 <local:VariableGridView.ItemTemplate>
                     <DataTemplate>

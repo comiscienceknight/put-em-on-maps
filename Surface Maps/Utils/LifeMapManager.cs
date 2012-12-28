@@ -52,20 +52,24 @@ namespace Surface_Maps.Utils
         {
         }
 
-        public async Task InitializeLifeMapManager()
+        /// <summary>
+        /// If return true, it means this is user's first time use this application
+        /// </summary>
+        /// <returns></returns>
+        public async Task<bool> InitializeLifeMapManager()
         {
             ObservableCollection<PushpinDataStructure> ListPushpin = new ObservableCollection<PushpinDataStructure>();
             ObservableCollection<AlbumDataStructure> ListOfAllAlbums = new ObservableCollection<AlbumDataStructure>();
             ObservableCollection<PhotoDataStructure> ListOfAllPhotos = new ObservableCollection<PhotoDataStructure>();
             ObservableCollection<VideoDataStructure> ListOfAllVideos = new ObservableCollection<VideoDataStructure>();
-            await loadLifeMaps();
+            return await loadLifeMaps();
         }
 
-        private async Task loadLifeMaps()
+        private async Task<bool> loadLifeMaps()
         {
             var data = await Helper.GetContent<ObservableCollection<DataModel.LifeMapStructure>>(Utils.Constants.NamingListLifeMaps);
             if (data != null) LifeMaps = new ObservableCollection<DataModel.LifeMapStructure>(data);
-			if(LifeMaps == null) return;
+			if(LifeMaps == null) return true;
 			bool hasproblem = false;
             for (int i = 0; i < LifeMaps.Count; i++)
             {
@@ -88,12 +92,12 @@ namespace Surface_Maps.Utils
 				Utils.Constants.ShowWarningDialog(Constants.ResourceLoader.GetString("2CannotReadSeveralMapProfile") + "\n\r" +
                                                   Constants.ResourceLoader.GetString("2possiblereasondocumentlibararycannotaccess") + "\n\r" +
 												  Constants.ResourceLoader.GetString("2possiblereasonpathfilechanged"));
-            await loadDefaultLifeMap();
+            return (LifeMaps.Count == 0) ? (await loadDefaultLifeMap() == true) : false;
         }
 
-        private async Task loadDefaultLifeMap()
+        private async Task<bool> loadDefaultLifeMap()
         {
-            if (LifeMaps != null && LifeMaps.Count != 0) return;
+            if (LifeMaps != null && LifeMaps.Count != 0) return true;
             if (LifeMaps == null) LifeMaps = new ObservableCollection<LifeMapStructure>();
             LifeMaps.Add(new DataModel.LifeMapStructure()
             {
@@ -105,6 +109,7 @@ namespace Surface_Maps.Utils
             });
             await Utils.FilesSaver<LifeMapStructure>.SaveData(Data.LifeMapMgr.LifeMaps, Utils.Constants.NamingListLifeMaps);
             Helper.CreateToastNotifications(Constants.ResourceLoader.GetString("AddedLiftMap"));
+            return true;
         }
 
         public BitmapImage ImageFromRelativePath(FrameworkElement parent, string path)

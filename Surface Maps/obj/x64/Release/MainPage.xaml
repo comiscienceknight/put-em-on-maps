@@ -10,66 +10,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <common:LayoutAwarePage.TopAppBar>
-        <AppBar x:ConnectionId='1' x:Name="AppBar_TopAppBar" Visibility="Collapsed"                                  BorderBrush="Transparent" Background="#00000000">
-            <Grid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Width="480" Margin="0,10,250,0" Background="#99000000" >
-                    <Button x:ConnectionId='2'                                    x:Name="Button_RemoveLifeMap"
-                            x:Uid="Uid_Button_RemoveLifeMap"
-                            Margin="5">
-                        <Button.Style>
-                            <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
-                                <Setter Property="AutomationProperties.Name" Value=""/>
-                                <Setter Property="Content" Value="&#xE107;"/>
-                            </Style>
-                        </Button.Style>
-                    </Button>
-                    <Button x:ConnectionId='3'                                        x:Name="Button_ChangeLifeMapName"
-                            x:Uid="Uid_Button_ChangeLifeMapName"
-                            Margin="5">
-                        <Button.Style>
-                            <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
-                                <Setter Property="AutomationProperties.Name" Value=""/>
-                                <Setter Property="Content" Value="&#xE12A;"/>
-                            </Style>
-                        </Button.Style>
-                    </Button>
-                    <Button x:ConnectionId='4'                                             
-                            x:Uid="Uid_Button_ChangeLifeMapBackground" x:Name="Button_ChangeLifeMapBackground"
-                            Margin="5">
-                        <Button.Style>
-                            <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
-                                <Setter Property="AutomationProperties.Name" Value=""/>
-                                <Setter Property="Content" Value="&#xE187;"/>
-                            </Style>
-                        </Button.Style>
-                    </Button>
-                    <Button x:ConnectionId='5' x:Name="Button_EnterSelectedLifeMap"                                           
-                            x:Uid="Uid_Button_EnterSelectedLifeMap"
-                            FontSize="18" FontWeight="Light"
-                            Margin="5" HorizontalAlignment="Right">
-                        <Button.Style>
-                            <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
-                                <!--<Setter Property="AutomationProperties.AutomationId" Value="PlayAppBarButton"/>-->
-                                <Setter Property="AutomationProperties.Name" Value=""/>
-                                <Setter Property="Content" Value="&#xE102;"/>
-                            </Style>
-                        </Button.Style>
-                    </Button>
-                </StackPanel>
-            </Grid>
-        </AppBar>
-    </common:LayoutAwarePage.TopAppBar>
     <common:LayoutAwarePage.BottomAppBar>
-        <AppBar x:ConnectionId='6' x:Name="AppBar_BottomAppBar" Background="#99000000" BorderBrush="#99000000"                                    >
+        <AppBar x:ConnectionId='1' x:Name="AppBar_BottomAppBar" Background="#99000000" BorderBrush="#99000000"                                    >
             <Grid Height="110" x:Name="Grid_BottomAppBar">
-                <TextBox x:Name="TextBox_ChangeLiftMapName" Opacity="0" Text="" HorizontalAlignment="Left" Width="400" Height="40"
-                         VerticalAlignment="Top" Margin="30" FontSize="20" />
-                <Button x:ConnectionId='7' x:Name="Button_UpdateLiftMapName" x:Uid="Uid_Button_UpdateLiftMapName"                                       
-                        Opacity="0" HorizontalAlignment="Left" Height="40"
-                        VerticalAlignment="Top" Margin="440,30,30,30"  />
-                <StackPanel x:Name="RightCommands" Orientation="Horizontal" HorizontalAlignment="Right" Width="130">
-                    <Button x:ConnectionId='8' x:Name="Button_AddNewLifeMap"                                    
+                <StackPanel x:Name="RightCommands" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:ConnectionId='2' x:Name="Button_AddNewLifeMap"                                    
                             x:Uid="Uid_Button_AddNewLifeMap"
                             FontSize="18" FontWeight="Light"
                             Margin="5" HorizontalAlignment="Right">
@@ -81,6 +26,58 @@
                             </Style>
                         </Button.Style>
                     </Button>
+                    <StackPanel x:Name="StackPanel_MapCommand" Orientation="Horizontal">
+                        <Rectangle Margin="5,10,5,35" Width="1" Fill="White"  />
+                        <Button x:ConnectionId='3'                                    x:Name="Button_RemoveLifeMap"
+                            x:Uid="Uid_Button_RemoveLifeMap"
+                            Margin="5">
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+                                    <Setter Property="AutomationProperties.Name" Value=""/>
+                                    <Setter Property="Content" Value="&#xE107;"/>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button x:ConnectionId='4'                                        x:Name="Button_ChangeLifeMapName"
+                            x:Uid="Uid_Button_ChangeLifeMapName"
+                            Margin="5">
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+                                    <Setter Property="AutomationProperties.Name" Value=""/>
+                                    <Setter Property="Content" Value="&#xE12A;"/>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <StackPanel x:Name="StackPanel_ChangeMapName" Visibility="Collapsed" Orientation="Horizontal">
+                            <TextBox x:Name="TextBox_ChangeLiftMapName" Text="" HorizontalAlignment="Left" Width="400" Height="40"
+                                VerticalAlignment="Center" Margin="5,30,5,30" FontSize="20" />
+                            <Button x:ConnectionId='7' x:Name="Button_UpdateLiftMapName" x:Uid="Uid_Button_UpdateLiftMapName"                                       
+                                HorizontalAlignment="Left" Height="40"
+                                VerticalAlignment="Center" Margin="5,30,5,30"  />
+                        </StackPanel>
+                        <Button x:ConnectionId='5'                                             
+                            x:Uid="Uid_Button_ChangeLifeMapBackground" x:Name="Button_ChangeLifeMapBackground"
+                            Margin="5">
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+                                    <Setter Property="AutomationProperties.Name" Value=""/>
+                                    <Setter Property="Content" Value="&#xE187;"/>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                        <Button x:ConnectionId='6' x:Name="Button_EnterSelectedLifeMap"                                           
+                            x:Uid="Uid_Button_EnterSelectedLifeMap"
+                            FontSize="18" FontWeight="Light"
+                            Margin="5" HorizontalAlignment="Right">
+                            <Button.Style>
+                                <Style TargetType="Button" BasedOn="{StaticResource AppBarButtonStyle}">
+                                    <!--<Setter Property="AutomationProperties.AutomationId" Value="PlayAppBarButton"/>-->
+                                    <Setter Property="AutomationProperties.Name" Value=""/>
+                                    <Setter Property="Content" Value="&#xE102;"/>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
                 </StackPanel>
             </Grid>
         </AppBar>
@@ -107,12 +104,15 @@
         </DataTemplate>
 
         <DataTemplate x:Key="Standard500x400ItemTemplate">
-            <Grid x:ConnectionId='9' HorizontalAlignment="Left"                             Width="{Binding Width}" Height="{Binding Height}" Margin="10" >
+            <Grid x:ConnectionId='8' HorizontalAlignment="Left"                             Width="{Binding Width}" Height="{Binding Height}" Margin="10" >
                 <Border Background="Transparent">
                     <Grid>
                         <Grid VerticalAlignment="Stretch" Margin="0,0,0,90" Background="Brown">
                             <Image Source="/Assets/Images/u_03.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" >
                             </Image>
+                            <TextBlock x:Uid="Uid_TextBlock_TapMeToOpenBottomMenu" Foreground="#DDFFFFFF" TextAlignment="Center"
+                                       FontSize="22" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="5" FontWeight="Light"
+                                       TextWrapping="Wrap" />
                             <Image Source="{Binding Image}" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" >
                             </Image>
                         </Grid>
@@ -152,7 +152,7 @@
             </Grid>
 
             <Grid Grid.Row="1" x:Name="Grid_Content">
-                <GridView x:ConnectionId='10'
+                <GridView x:ConnectionId='9'
                 x:Name="itemGridView"
                 AutomationProperties.AutomationId="ItemsGridView"
                 AutomationProperties.Name="Items"
